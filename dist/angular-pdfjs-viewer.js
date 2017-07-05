@@ -221,7 +221,7 @@
 '                  <span data-l10n-id="tools_label">Tools</span>\n' +
 '                </button>\n' +
 '\n' +
-'                <button id="close" class="toolbarButton" title="Close" tabindex="37" data-l10n-id="close" ng-click="onClose()"><strong>X</strong>\n' +
+'                <button id="close" class="closeButton toolbarButton" title="Close" tabindex="37" data-l10n-id="close" ng-click="onClose()"><strong>X</strong>\n' +
 '                  <span data-l10n-id="close_label">Close</span>\n' +
 '                </button>\n' +
 '              </div>\n' +
@@ -377,7 +377,7 @@
 '\n' +
 '    </div> <!-- outerContainer -->\n' +
 '    <div id="printContainer"></div>\n' +
-'  </pdfjs-wrapper>,
+'  </pdfjs-wrapper>',
             restrict: 'E',
             scope: {
                 onInit: '&',
