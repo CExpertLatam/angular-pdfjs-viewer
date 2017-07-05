@@ -377,7 +377,7 @@
 '\n' +
 '    </div> <!-- outerContainer -->\n' +
 '    <div id="printContainer"></div>\n' +
-'  </pdfjs-wrapper>',
+'  </pdfjs-wrapper>,
             restrict: 'E',
             scope: {
                 onInit: '&',
@@ -492,6 +492,15 @@
                     if ($attrs.print === 'false') {
                         document.getElementById('print').setAttribute('hidden', 'true');
                         document.getElementById('secondaryPrint').setAttribute('hidden', 'true');
+                    }
+
+                    if ($attrs.bookmark === 'false') {
+                        document.getElementById('viewBookmark').setAttribute('hidden', 'true');
+                        document.getElementById('secondaryViewBookmark').setAttribute('hidden', 'true');
+                    }
+
+                    if ($attrs.properties === 'false') {
+                        document.getElementById('documentProperties').setAttribute('hidden', 'true');
                     }
 
                     if ($attrs.width) {
