@@ -220,6 +220,10 @@
 '                <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="36" data-l10n-id="tools">\n' +
 '                  <span data-l10n-id="tools_label">Tools</span>\n' +
 '                </button>\n' +
+'\n' +
+'                <button id="close" class="toolbarButton" title="Close" tabindex="37" data-l10n-id="close" ng-click="onClose()"><strong>X</strong>\n' +
+'                  <span data-l10n-id="close_label">Close</span>\n' +
+'                </button>\n' +
 '              </div>\n' +
 '              <div id="toolbarViewerMiddle">\n' +
 '                <div class="splitToolbarButton">\n' +
@@ -378,6 +382,7 @@
             scope: {
                 onInit: '&',
                 onPageLoad: '&',
+                onClose: '&',
                 scale: '=?',
                 src: '@?',
                 data: '=?'
@@ -500,4 +505,6 @@
             }
         };
     }]);
+
+    // 
 }();

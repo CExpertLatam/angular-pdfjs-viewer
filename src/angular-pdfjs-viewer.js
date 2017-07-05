@@ -75,6 +75,7 @@
             scope: {
                 onInit: '&',
                 onPageLoad: '&',
+                onClose: '&',
                 scale: '=?',
                 src: '@?',
                 data: '=?'
