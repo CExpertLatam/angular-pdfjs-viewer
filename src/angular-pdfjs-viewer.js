@@ -187,6 +187,15 @@
                         document.getElementById('secondaryPrint').setAttribute('hidden', 'true');
                     }
 
+                    if ($attrs.bookmark === 'false') {
+                        document.getElementById('viewBookmark').setAttribute('hidden', 'true');
+                        document.getElementById('secondaryViewBookmark').setAttribute('hidden', 'true');
+                    }
+
+                    if ($attrs.properties === 'false') {
+                        document.getElementById('documentProperties').setAttribute('hidden', 'true');
+                    }
+
                     if ($attrs.width) {
                         document.getElementById('outerContainer').style.width = $attrs.width;
                     }
