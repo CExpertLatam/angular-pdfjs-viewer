@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "angular": "^1.5.8",
-    "pdf.js-viewer": "https://github.com/CExpertLatam/pdf.js-viewer.git#67fd6ea841068260fe330e72e942cd4b29432baf"
+    "pdf.js-viewer": "https://github.com/CExpertLatam/pdf.js-viewer.git#15a48f808da963a803cc7805bd45275ed886dab9"
   },
   "ignore": [
     "**/.*",
